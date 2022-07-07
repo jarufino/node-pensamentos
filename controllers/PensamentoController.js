@@ -26,7 +26,7 @@ module.exports=class PensamentoController{
         if(!usuario){
             res.redirect('/login')
         }
-        res.render('/pensamentos/dashboard')
+        res.render('pensamentos/dashboard')
     }
     static async criaPensamento(req,res){
         res.render('pensamentos/criar',  {
